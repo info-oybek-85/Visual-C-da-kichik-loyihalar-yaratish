@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx -->
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="canonical" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx">
+    <title>Событие LinkLabel.LinkClicked (System.Windows.Forms)</title>
+
+
+
+
+
+
+
+<meta name="DCS.dcsuri" content="/ru-ru/library/0yey475y(d=default,l=ru-ru,v=vs.110).aspx">
+
+<meta name="NormalizedUrl" content="https://msdn.microsoft.com/ru-ru/library/0yey475y(d=default,l=ru-ru,v=vs.110).aspx">
+
+<meta name="ms.normalizedurl" content="https://msdn.microsoft.com/ru-ru/library/0yey475y(d=default,l=ru-ru,v=vs.110).aspx">
+
+<meta name="ms.prod" content=".net-framework-4.6">
+
+<meta name="ms.devlang" content="csharp">
+
+<meta name="ms.topic" content="managed-reference">
+
+<meta name="AmbientContext" content="{&quot;layout.limit_max_width&quot;:true,&quot;AmbientContextId&quot;:&quot;36D9A183-1215-42D5-9A45-D6820BD18E1E&quot;,&quot;display.use_large_font&quot;:false,&quot;insight.perf_timing&quot;:true,&quot;AmbientContextDownstream&quot;:{&quot;LogTrace&quot;:false},&quot;display.high_contrast&quot;:false,&quot;insight.use_wedcs_vnext&quot;:true}">
+
+<meta name="VotingContextUrl" content="https://msdn.microsoft.com/ru-ru/library/0yey475y(d=default,l=ru-ru,v=vs.110).aspx">
+
+<meta name="MN" content="EE4293C2-5:02:29 AM">
+
+<meta name="Search.ShortId" content="0yey475y">
+
+<meta name="ms.shortidmsdn" content="0yey475y">
+
+<meta name="ms.locale" content="ru-ru">
+
+<meta name="ms.prodver" content="VS.110">
+
+<meta name="ms.contentlang" content="RU">
+
+<meta name="ms.lang" content="RU">
+
+<meta name="ms.loc" content="RU">
+
+<meta name="ms.sitever" content="2017.05.23.2">
+
+<meta name="ms.assetid" content="E:System.Windows.Forms.LinkLabel.LinkClicked">
+
+<meta name="ms.auth" content="0">
+
+<meta name="ms.technology" content="dotnet-winforms">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+        
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" data-do-not-move="true">
+        //<![CDATA[
+        var AmbientContext = null;
+
+        (function(){
+            var root = (function(){return this;}).call(null);
+
+            var GetCookie = function(name){
+                var cookies = root.document.cookie ? root.document.cookie.split('; ') : [];
+                for (var i = 0; i < cookies.length; i++) {
+                    var pos = cookies[i].indexOf('=');
+                    if (name === root.decodeURIComponent(cookies[i].slice(0, pos)))
+                    {
+                        var cookie = cookies[i].slice(pos + 1).replace(/\+/g, ' ');
+                        cookie = root.decodeURIComponent(cookie);
+                        return cookie;
+                    }
+                }
+            };
+
+            var JsonDeserialize = function(content) {
+                return root.JSON && root.JSON.parse ? root.JSON.parse(content) : (new Function('return (' + content + ')'))();
+            };
+
+            try {
+                AmbientContext = GetCookie('AmbientContext');
+                AmbientContext = AmbientContext && JsonDeserialize(AmbientContext);
+            } catch(ex) {
+            } finally {
+                AmbientContext = AmbientContext || null;
+            }
+        })();
+        //]]>
+    </script>
+
+    <script type="text/javascript" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/jquery-1.9.1.min.js" data-do-not-move="true" data-provides="jQuery"></script>
+    
+<link rel="stylesheet" type="text/css" href="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/Combined.css"><script class="mtps-injected">try {
+/**/
+(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { 
+	"image": "https://i-msdn.sec.s-msft.com", 
+	"js": "https://i2-msdn.sec.s-msft.com", 
+	"css": "https://i-msdn.sec.s-msft.com", 
+	"ttf": "https://i-msdn.sec.s-msft.com"
+});
+/**/
+} finally { MTPS._injectNextScript_0 && MTPS._injectNextScript_0(); }</script><script class="mtps-injected">try {
+//
+
+        window.appInsightsId = '5eb1b2eb-c47a-497a-a7ac-a1c230b2882f';
+        //
+} finally { MTPS._injectNextScript_1 && MTPS._injectNextScript_1(); }</script><script class="mtps-injected" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/Combined.js"></script><script class="mtps-injected" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/SearchBox.jss"></script><script class="mtps-injected" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/JumpRedirect.js"></script><script class="mtps-injected">try {
+//
+    MTPS = window.MTPS || {};
+    MTPS.Translation = window.MTPS.Translation || {};
+
+    MTPS.Translation.TranslationType =  0;
+    
+    
+        
+        MTPS.Translation.EditorLink = {
+            includeEditor : 0,
+            editLink: "https://msdn.microsoft.com/ru-ru/library/translation/edit/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx",
+            editLinkText: "Предложите более удачный вариант перевода"
+        };
+        
+    //
+} finally { MTPS._injectNextScript_5 && MTPS._injectNextScript_5(); }</script><script class="mtps-injected" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/Combined(1).js"></script><script class="mtps-injected">try {
+MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = 'Развернуть'; MTPS.LocalizedStrings.CollapseButtonTooltip = 'Свернуть'; MTPS.LocalizedStrings.EnhancedExpandTooltip = 'Щелкните, чтобы развернуть. Щелкните дважды, чтобы развернуть все.'; MTPS.LocalizedStrings.EnhancedCollapseTooltip = 'Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все.'; MTPS.LocalizedStrings.ExpandAllButtonTooltip = 'Развернуть все'; MTPS.LocalizedStrings.CollapseAllButtonTooltip = 'Свернуть все';
+} finally { MTPS._injectNextScript_7 && MTPS._injectNextScript_7(); }</script><script class="mtps-injected" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/Combined(2).js"></script><script class="mtps-injected">try {
+$(document).ready(function() {
+        try {
+            var token = $("#globalRequestVerification input[name='__RequestVerificationToken']").clone();
+            $("#siteFeedbackForm").append(token);
+        } catch(err) {
+            
+        }
+    });
+} finally { MTPS._injectNextScript_9 && MTPS._injectNextScript_9(); }</script></head>
+<body class="library Chrome">
+    <div id="page">
+
+        
+
+        
+    
+
+    
+    <link type="text/css" rel="stylesheet">
+    
+        
+        
+    <input type="hidden" id="isHeaderBleeding" value="true">
+    <div id="ux-header" dir="ltr" class="ltr msdn" ms.pgarea="header">
+        
+
+      <header>
+        <span id="singleCol"></span>
+        <span id="doubleCol"></span>
+        <span id="isMobile"></span>
+        <div>
+          <div class="row topRow" role="banner">
+            <div class="top">
+              <div class="left">
+                <a class="msdnLogoImg" href="https://msdn.microsoft.com/ru-ru" title="MSDN home" ms.cmpgrp="mslogo">
+                  <div class="clip70x15">
+                    <img alt="Microsoft Logo" id="msft-logo" class="msft-logo" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/HeaderFooterSprite.png">
+                  </div>
+                </a>
+                <div class="GrayPipeDiv clip1x18">
+                  <img alt="Gray Pipe" class="GrayPipe" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/HeaderFooterSprite.png">
+                </div>
+                  <a class="DevCenterFullNameNonMegaBlade" href="https://msdn.microsoft.com/ru-ru">Developer Network</a>
+                <a class="DevCenterFullName" href="https://msdn.microsoft.com/ru-ru">Developer Network</a>
+                <a class="DevCenterShortName" href="https://msdn.microsoft.com/ru-ru">Developer</a>
+              </div>
+              <div class="right" ms.cmpgrp="aux nav">
+                <div id="signIn" aria-label="Profile button">
+
+  <div class="profileImage"></div>
+
+
+
+<a class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1496664149&amp;rver=6.7.6640.0&amp;wp=mcmbi&amp;wlcxt=msdn%24msdn%24msdn&amp;wreply=https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2fsystem.windows.forms.linklabel.linkclicked%2528v%3dvs.110%2529.aspx&amp;lc=1049&amp;id=254354&amp;mkt=ru-ru">Войти</a></div>
+
+
+
+
+                <div class="auxNav">
+                  <div>
+                    <div data-fragmentname="Subscriptions" id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/subscriptions/manage/hh442900" id="Subscriptions_2153_1" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="line-height:18px;" xmlns="">Подписки MSDN</span>
+  </a>
+</div>
+                    <div data-fragmentname="GetTools" id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://go.microsoft.com/fwlink/?LinkId=309297&amp;clcid=0x419&amp;slcid=0x419&amp;campaign=o~msft~msdn~gettools-header~dn308572" id="GetTools_2153_3" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="line-height:18px;" xmlns="">Получить инструменты</span>
+  </a>
+</div>
+                  </div>
+                        <div>
+                            
+                        </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row middleRow">
+            <div class="expandTop">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+          </div>
+        </div>
+        <div id="buttomRowWrapper" class="bg_default">
+          <div class="row buttomRow bg_default">
+            <div class="bottom">
+              <div class="left" role="navigation" aria-label="header toc" ms.cmpgrp="main nav">
+                <a id="grip" class="menu-icon" href="javascript:void(0)" role="button" aria-label="navigation menu"></a>
+                
+                <div id="drawer">
+                  <div class="toc">
+                    
+        <nav>
+            <ul class="navL1">
+                        <li class="inactive toggle">
+                                <a href="javascript:void(0)" role="button" aria-expanded="false">Загрузки</a>
+                                <ul class="navL2">
+                                        <li class="inactive">
+
+                                                <a href="https://www.visualstudio.com/ru/downloads/" role="link" title="Visual Studio">Visual Studio</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/microsoft-sdks-msdn" role="link" title="Пакеты SDK">Пакеты SDK</a>
+                                        </li>
+                                        <li class="inactive toggle">
+
+                                                <a href="javascript:void(0)" title="Пробные версии программ" role="button" aria-expanded="false">Пробные версии программ</a>
+                                                <ul class="navL3">
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/evalcenter" title="Бесплатное скачивание" role="link">Бесплатное скачивание</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/officeevaluationresources" title="Ресурсы Office" role="link">Ресурсы Office</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/sharepoint2013resources" title="Ресурсы Microsoft SharePoint Server 2013" role="link">Ресурсы Microsoft SharePoint Server 2013</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/sqlserver2014expressresources" title="Ресурсы Microsoft SQL Server 2014 Express" role="link">Ресурсы Microsoft SQL Server 2014 Express</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/windowsserver2012r2resources" title="Материалы Windows Server 2012 R2" role="link">Материалы Windows Server 2012 R2</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                                <a href="javascript:void(0)" role="button" aria-expanded="false">Программы</a>
+                                <ul class="navL2">
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/msdn-subscriptions-administration" role="link" title="Подписки администраторам">Подписки администраторам</a>
+                                        </li>
+                                        <li class="inactive toggle">
+
+                                                <a href="javascript:void(0)" title="Студентам" role="button" aria-expanded="false">Студентам</a>
+                                                <ul class="navL3">
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/imagine/imagine-home" title="Microsoft Imagine" role="link">Microsoft Imagine</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/microsoftstudentpartners" title="Программа Microsoft Student Partners" role="link">Программа Microsoft Student Partners</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://www.microsoft.com/ru-ru/isvs" role="link" title="ISV">ISV</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://www.microsoft.com/ru-ru/ms-start" role="link" title="Стартапам">Стартапам</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://events.microsoft.com/" role="link" title="Мероприятия">Мероприятия</a>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                                <a href="javascript:void(0)" role="button" aria-expanded="false">Сообщество</a>
+                                <ul class="navL2">
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/magazine/dd767791" role="link" title="Журнал MSDN">Журнал MSDN</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://social.msdn.microsoft.com/forums/" role="link" title="Форумы">Форумы</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://blogs.msdn.microsoft.com/rudevnews/" role="link" title="Блог">Блог</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="http://channel9.msdn.com/" role="link" title="Канал Channel 9">Канал Channel 9</a>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive current toggle">
+                                <a href="javascript:void(0)" role="button" aria-expanded="false">Документация</a>
+                                <ul class="navL2">
+                                        <li class="inactive current">
+
+                                                <a href="https://msdn.microsoft.com/library" role="link" title="API и справочники">API и справочники</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/developer-centers-msdn" role="link" title="Центры разработки">Центры разработки</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://code.msdn.microsoft.com/" role="link" title="Примеры кода">Примеры кода</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/retiredcontent" role="link" title="Более не поддерживаемое содержимое">Более не поддерживаемое содержимое</a>
+                                        </li>
+                                </ul>
+                        </li>
+            </ul>
+        </nav>
+
+                  </div>
+                </div>
+              </div>
+              <div class="right" ms.title="search" role="search">
+                <div data-fragmentname="SearchBox" id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="SearchBox">
+    <form id="HeaderSearchForm" name="HeaderSearchForm" method="get">
+      <button id="FakeHeaderSearchButton" value="Search" type="submit" class="header-search-button" role="button" aria-label="search finder">
+        <div id="search-finder-div" class="clip16x20">
+          <img alt="search finder" id="search-finder" class="search-finder" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/HeaderFooterSprite.png">
+        </div>
+      </button>
+      <button id="HeaderSearchButton" style="display:none"></button>
+      <div id="searchSplitter"></div>
+      <div id="searchCloseIconDiv" class="clip16x20" tabindex="0">
+        <img alt="search clear" id="searchCloseIcon" class="search-clear-x" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/HeaderFooterSprite.png">
+      </div>
+      <div id="searchTextContainer" style="width: 0;">
+        <input id="HeaderSearchTextBox" name="query" type="text" aria-label="search edit textbox" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)">
+      </div>
+    </form>
+    
+    
+  </div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+    </div>
+
+    
+    
+    
+    <div id="jumpInfo" style="display: none">Приносим извинения. Запрошенное содержимое было удалено. Вы будете автоматически перенаправлены через 1 секунду.</div>
+
+
+
+
+
+<link type="text/css" rel="stylesheet">
+<link type="text/css" rel="stylesheet">
+
+
+    <div id="breadcrumbs" ms.pgarea="body" ms.cmpgrp="breadcrumbs">
+        <div id="breadcrumbDesktop" class="breadCrumb">
+                        <span class="breadcrumbEllipsis"><a href="https://msdn.microsoft.com/ru-ru/library/mt468159(v=vs.110).aspx" title="System.Windows Пространства имен"></a></span>
+                        <span><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms(v=vs.110).aspx" title="System.Windows.Forms"><span>System.Windows.Forms</span></a></span>
+                        <span><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx" title="LinkLabel Класс"><span>LinkLabel Класс</span></a></span>
+                        <span class="breadcrumbDropSmall">
+                            <a id="breadcrumbDropDownButton" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#" targethref="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx" title="LinkLabel События"><span>LinkLabel События</span></a>
+                        </span>
+        </div>
+        <div id="breadcrumbDropDownMenu"></div>
+
+        <div id="breadcrumbTablet" class="breadCrumb">
+                        <span class="breadcrumbEllipsis"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx" title="LinkLabel Класс"></a></span>
+                    <span><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel_events(v=vs.110).aspx" title="LinkLabel События"><span>LinkLabel События</span></a></span>
+                <span class="breadcrumbDropSmall"><a id="tocDropDownButton" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#" title="LinkClicked Событие"><span>LinkClicked Событие</span></a></span>
+        </div>
+        <div id="tocDropDownMenu"></div>
+        <div id="breadcrumbMobile" class="breadCrumb">
+                <span class="breadcrumbEllipsis"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel_events(v=vs.110).aspx" title="LinkLabel События"></a></span>
+            <span class="breadcrumbDropSmall"><a id="tocPopupButton" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#" title="LinkClicked Событие"><span>LinkClicked Событие</span></a></span>
+        </div>
+    </div>
+    <div id="tocPopupMenu">
+        <div id="tocPopMenuClose" class="tocCloseLarge"></div>
+        <div id="tocTitle">LinkClicked Событие</div>        
+    </div>
+
+    
+
+
+        <div id="body" ms.pgarea="body" class="">
+            <span id="tabletView_large"></span>
+            <span id="tabletView_small"></span>
+            <span id="mobileView"></span>
+            
+
+
+
+
+
+
+
+
+
+    <div id="leftNav" ms.cmpgrp="left toc" role="navigation" aria-label="left toc">
+
+    
+
+
+<div id="tocnav" class="ArchiveV2">
+    <div class="tocunselected">
+        <div id="tocExpandArea">
+            <span class="toc_empty"></span>
+            <span id="tocExpandButton"><a href="javascript:void(0)" aria-label="expand sibling toc" role="button"></a></span>
+        </div>
+        <div id="tocExpand"></div>
+    </div>
+    <div class="tocselected"></div>
+    <div class="tocunselected">
+                <div class="toclevel current" data-toclevel="1">
+<a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="LinkClicked Событие">LinkClicked Событие</a>                </div>
+                <div class="toclevel " data-toclevel="1">
+<a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.tabstopchanged(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="TabStopChanged Событие">TabStopChanged Событие</a>                </div>
+    </div>
+    <a id="tocMenuToggler" href="javascript:void(0)" role="button">
+        <span id="tocMenuTogglerIcon" class="tocMenuCollapse" role="button" aria-expanded="true" aria-label="Table of contents menu"></span>
+        <div id="tocMenuTogglerLabel">TOC</div>
+    </a>
+</div>            <div style="display:none">
+                <div id="CollapseLocalizeString">Свернуть оглавление</div>
+                <div id="ExpandLocalizeString">Развернуть оглавление</div>
+            </div>
+        <div>
+            <a id="isd_archiveControlResponsive" style="display:none;" href="javascript:void(0)" role="button" aria-label="Скрыть архивные версии" data-include-archive="Показать архивные версии" data-exclude-archive="Скрыть архивные версии">
+            </a>
+            <div id="isd_archiveInstrument" style="display:none">Эта документация перемещена в архив и не поддерживается.</div>
+        </div>
+    </div>
+     <div id="content" class="content" ms.cmpgrp="content body" role="main">
+
+
+
+<div id="MTPSTranslator" class="MTPSTranslator">
+    <table class="MTPSTranslatorTable" style="width: 100%">
+        <tbody><tr>
+            <td class="TranslationAlertBox">
+                <div>Данная статья переведена с помощью средств машинного перевода. Чтобы просмотреть ее на английском языке, установите флажок Английский. Вы также можете просматривать английский текст во всплывающем окне, наводя указатель мыши на переведенный текст.</div>
+            </td>
+                <td class="TranslationViewSwitcher">
+                    <div>
+                        <input title="Показать перевод" value="0" name="TrnaslatorView" type="radio" class="translatechoice" checked="checked"><span>Перевод</span>
+                    </div>
+                    <div>
+                        <input title="Показать текст на английском языке" value="1" name="TrnaslatorView" type="radio" class="translatechoice"><span>Английский</span>
+                    </div>
+                </td>
+        </tr>
+    </tbody></table>
+</div>
+    
+    
+    
+     
+
+
+
+
+
+
+
+    <div id="archiveDisclaimerText" style="display:none">Эта документация перемещена в архив и не поддерживается.</div>
+
+
+
+<div xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="topic">
+    <h1 class="title">Событие LinkLabel<span xmlns="">::</span>LinkClicked</h1>
+    
+    <div class="lw_vs">
+      <div id="curversion">
+        <strong>
+                .NET Framework (current version)
+            </strong>
+      </div>
+      <div id="versionclick">
+        <div id="vsseperator" class="cl_lw_vs_seperator"></div>
+        <div>
+          <div>
+            <a id="vsLink" href="javascript:void(0)" role="button" aria-label="Другие версии" aria-expanded="false">
+                        Другие версии
+                    </a>
+          </div>
+          <div class="cl_vs_arrow clip10x10">
+            <img class="cl_lw_vs_arrow" id="vsArrow" alt="" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/ImageSprite.png">
+          </div>
+        </div>
+        <ul id="vsPanel">
+          <li class="archived">
+            <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.100).aspx">Visual Studio 2010</a>
+          </li>
+          <li class="archived">
+            <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.100).aspx">.NET Framework 4</a>
+          </li>
+          <li class="archived">
+            <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.90).aspx">Visual Studio 2008</a>
+          </li>
+          <li class="archived">
+            <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.90).aspx">.NET Framework 3.5</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div id="mainSection">
+      <div id="mainBody">&nbsp;<p>Опубликовано: Октябрь 2016</p><div class="section"><div class="section"><p><span id="mt1" class="sentence" data-guid="de7c2b550021b63153bfe00c35fdc43b" data-source="Occurs when a link is clicked within the control." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Происходит при щелчке ссылки в элементе управления.</sentencetext></span></p></div><strong>Пространство имен:
+      </strong>
+      &nbsp;
+      <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms(v=vs.110).aspx">System.Windows.Forms</a><br><strong>Сборка:
+        </strong>&nbsp;System.Windows.Forms (в System.Windows.Forms.dll)<br><br><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="Свернуть" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Синтаксис</span></a><div id="Anchor_0" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#Anchor_0" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock">
+<div id="code-snippet-1" class="codeSnippetContainer" xmlns="">
+    <div class="codeSnippetContainerTabs">
+        <div class="codeSnippetContainerTab" dir="ltr"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=csharp#code-snippet-1">C#</a></div><div class="codeSnippetContainerTabActive" dir="ltr"><a>C++</a></div><div class="codeSnippetContainerTab" dir="ltr"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=fsharp#code-snippet-1">F#</a></div><div class="codeSnippetContainerTab" dir="ltr"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-1">VB</a></div>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+        <div class="codeSnippetToolBar">
+            <div class="codeSnippetToolBarText">
+                <a name="CodeSnippetCopyLink" style="display: none;" title="Копировать в буфер обмена." href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode(&#39;CodeSnippetContainerCode_3f56c3bc-d04f-452b-a2db-94f4d2b8e097&#39;);" ms.cmptyp="CodeSnippet">Копировать</a>
+            </div>
+        </div>
+        <div id="CodeSnippetContainerCode_3f56c3bc-d04f-452b-a2db-94f4d2b8e097" class="codeSnippetContainerCode" dir="ltr">
+            <div style="color:Black;"><pre><span style="color:Blue;">public</span>:
+<span style="color:Blue;">event</span> LinkLabelLinkClickedEventHandler^ LinkClicked {
+	<span style="color:Blue;">void</span> add(LinkLabelLinkClickedEventHandler^ <span style="color:Blue;">value</span>);
+	<span style="color:Blue;">void</span> remove(LinkLabelLinkClickedEventHandler^ <span style="color:Blue;">value</span>);
+}
+</pre></div>
+            
+        </div>
+    </div>
+</div>
+</div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="Свернуть" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Комментарии</span></a><div id="Anchor_1" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><div class="section"><p><span id="mt2" class="sentence" data-guid="cbd5ec410f28d78cfeb87db0d48088b1" data-source="Typically, the &lt;span class=&quot;selflink&quot;&gt;LinkClicked&lt;/span&gt; event is handled to perform tasks when the user clicks on a link in the control." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Как правило <span class="selflink" xmlns="http://www.w3.org/1999/xhtml">LinkClicked</span> событие используется для выполнения задач при щелчке ссылки в элементе управления.</sentencetext></span><span id="mt3" class="sentence" data-guid="b6ae85eaa35f595ca99ce8da40e76ba5" data-source=" The event handler for the &lt;span class=&quot;selflink&quot;&gt;LinkClicked&lt;/span&gt; event is passed an instance of the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabelLinkClickedEventArgs&lt;/span&gt;&lt;/span&gt; class that contains a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;Link&lt;/span&gt;&lt;/span&gt; object that is associated with the link that was clicked." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Обработчик событий для <span class="selflink" xmlns="http://www.w3.org/1999/xhtml">LinkClicked</span> событие передается экземпляр <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabellinkclickedeventargs(v=vs.110).aspx">LinkLabelLinkClickedEventArgs</a> класс, содержащий <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.link(v=vs.110).aspx">LinkLabel<span xmlns="">::</span>Link</a> объект, связанный со ссылкой, которая была нажата.</sentencetext></span><span id="mt4" class="sentence" data-guid="faabbc21754db79f38129680cb0c5817" data-source=" You can use information specified in the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;LinkData&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; property of &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;Link&lt;/span&gt;&lt;/span&gt; class to determine which link was clicked or what type of task to perform when the link is clicked." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Можно использовать сведения, указанные в <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.link.linkdata(v=vs.110).aspx"><span xmlns="">LinkData</span></a> свойство <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.link(v=vs.110).aspx">LinkLabel<span xmlns="">::</span>Link</a> была нажата класс, чтобы определить, какую ссылку или введите задачу необходимо выполнить при ее нажатии.</sentencetext></span><span id="mt5" class="sentence" data-guid="f5f8f1df3b49b5c3733b3686270da87b" data-source=" For example, if a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;/span&gt;&lt;/span&gt; control has a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;Link&lt;/span&gt;&lt;/span&gt; object defined with its &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;LinkData&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; property set to the string www.microsoft.com, you can use this information in an event handler for the &lt;span class=&quot;selflink&quot;&gt;LinkClicked&lt;/span&gt; event to display the Web site." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Например если <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx">LinkLabel</a> элемент управления имеет <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.link(v=vs.110).aspx">LinkLabel<span xmlns="">::</span>Link</a> объект, имеющий его <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.link.linkdata(v=vs.110).aspx"><span xmlns="">LinkData</span></a> свойство имеет значение строки www.microsoft.com, эти сведения можно использовать в обработчике событий для <span class="selflink" xmlns="http://www.w3.org/1999/xhtml">LinkClicked</span> событий для отображения веб-сайта.</sentencetext></span></p><p><span id="mt6" class="sentence" data-guid="e4d718758fcde0998f8dda649b348986" data-source="For more information about handling events, see &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Handling and Raising Events&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные сведения об обработке событий см. в разделе <a href="https://msdn.microsoft.com/ru-ru/library/edzehd2t(v=vs.110).aspx">Обработка и вызов событий</a>.</sentencetext></span></p></div></div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="Свернуть" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Примеры</span></a><div id="Anchor_2" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><div class="section"><div class="section"><div class="section"><p><span id="mt7" class="sentence" data-guid="899d77bb292c6b13e780ac39af8d6b61" data-source="The following example demonstrates using the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;/span&gt;&lt;/span&gt; class." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В следующем примере демонстрируется использование <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx">LinkLabel</a> класса.</sentencetext></span><span id="mt8" class="sentence" data-guid="420206b9dc18a2beca3a1415ccc0c755" data-source=" The example handles the &lt;span class=&quot;selflink&quot;&gt;LinkClicked&lt;/span&gt; event by opening a Web site." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> В примере показана обработка <span class="selflink" xmlns="http://www.w3.org/1999/xhtml">LinkClicked</span> события, открыв веб-сайта.</sentencetext></span></p>
+<div id="code-snippet-2" class="codeSnippetContainer" xmlns="">
+    <div class="codeSnippetContainerTabs">
+        <div class="codeSnippetContainerTab" dir="ltr"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=csharp#code-snippet-2">C#</a></div><div class="codeSnippetContainerTab" dir="ltr"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-2">VB</a></div><div class="codeSnippetContainerTabPhantom" dir="ltr"><a>C++</a></div>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+        <div class="codeSnippetToolBar">
+            <div class="codeSnippetToolBarText">
+                <a name="CodeSnippetCopyLink" style="display: none;" title="Копировать в буфер обмена." href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode(&#39;CodeSnippetContainerCode_8d805114-52b6-49ec-8dea-e3fad9b20b6d&#39;);" ms.cmptyp="CodeSnippet">Копировать</a>
+            </div>
+        </div>
+        <div id="CodeSnippetContainerCode_8d805114-52b6-49ec-8dea-e3fad9b20b6d" class="codeSnippetContainerCode" dir="ltr">
+            В настоящее время язык не поддерживается либо пример кода отсутствует.
+            
+        </div>
+    </div>
+</div>
+<p></p><p><span id="mt9" class="sentence" data-guid="d844279e1332a0c42e38dfa1860993a3" data-source="The following example demonstrates using the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;/span&gt;&lt;/span&gt; class, with multiple &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkArea&lt;/span&gt;&lt;/span&gt; sections defined, to display a label on a form." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В следующем примере демонстрируется использование <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx">LinkLabel</a> класс с несколькими <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linkarea(v=vs.110).aspx">LinkArea</a> разделы, определенные для отображения метки в форме.</sentencetext></span><span id="mt10" class="sentence" data-guid="0ac2f76ca6d39d4bc1b92ba30422a64e" data-source=" The example demonstrates setting the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;AutoSize&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;LinkBehavior&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;DisabledLinkColor&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;LinkColor&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, and &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;VisitedLinkColor&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; properties to customize the look of the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> В примере показано задание <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.label.autosize(v=vs.110).aspx"><span xmlns="">AutoSize</span></a>, <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkbehavior(v=vs.110).aspx"><span xmlns="">LinkBehavior</span></a>, <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.disabledlinkcolor(v=vs.110).aspx"><span xmlns="">DisabledLinkColor</span></a>, <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkcolor(v=vs.110).aspx"><span xmlns="">LinkColor</span></a>, и <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.visitedlinkcolor(v=vs.110).aspx"><span xmlns="">VisitedLinkColor</span></a> Свойства для настройки внешнего вида <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx">LinkLabel</a>.</sentencetext></span><span id="mt11" class="sentence" data-guid="cc7b97ef0ba454cc513d6dfa49fd18d7" data-source=" The first &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkArea&lt;/span&gt;&lt;/span&gt; is specified using the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;LinkLabel.LinkArea&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; property." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Первый <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linkarea(v=vs.110).aspx">LinkArea</a> задается с помощью <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkarea(v=vs.110).aspx"><span xmlns="">LinkLabel::LinkArea</span></a> свойство.</sentencetext></span><span id="mt12" class="sentence" data-guid="91496ba64fb3c301f27dfc25d4dde9a2" data-source=" Additional links are added to the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;/span&gt;&lt;/span&gt; using the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;LinkLabel&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;LinkCollection&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;Add&lt;/span&gt;&lt;/span&gt; method." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Дополнительные ссылки добавляются к <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx">LinkLabel</a> с помощью <a href="https://msdn.microsoft.com/ru-ru/library/z6h0hh3x(v=vs.110).aspx">LinkLabel<span xmlns="">::</span>LinkCollection<span xmlns="">::</span>Add</a> метод.</sentencetext></span><span id="mt13" class="sentence" data-guid="44e8405db571a3534e4aece69be22f65" data-source=" The example handles the &lt;span class=&quot;selflink&quot;&gt;LinkClicked&lt;/span&gt; event by starting the Web browser for hyperlinks, and displaying a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;MessageBox&lt;/span&gt;&lt;/span&gt; for other links." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> В примере показана обработка <span class="selflink" xmlns="http://www.w3.org/1999/xhtml">LinkClicked</span> событие путем запуска веб-обозревателя для гиперссылок и отображения <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.messagebox(v=vs.110).aspx">MessageBox</a> для других ссылок.</sentencetext></span></p>
+<div id="code-snippet-3" class="codeSnippetContainer" xmlns="">
+    <div class="codeSnippetContainerTabs">
+        <div class="codeSnippetContainerTab" dir="ltr"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=csharp#code-snippet-3">C#</a></div><div class="codeSnippetContainerTabActive" dir="ltr"><a>C++</a></div><div class="codeSnippetContainerTab" dir="ltr"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-3">VB</a></div>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+        <div class="codeSnippetToolBar">
+            <div class="codeSnippetToolBarText">
+                <a name="CodeSnippetCopyLink" style="display: none;" title="Копировать в буфер обмена." href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode(&#39;CodeSnippetContainerCode_f99f0648-2f6e-4b9e-9488-826056994de5&#39;);" ms.cmptyp="CodeSnippet">Копировать</a>
+            </div>
+        </div>
+        <div id="CodeSnippetContainerCode_f99f0648-2f6e-4b9e-9488-826056994de5" class="codeSnippetContainerCode" dir="ltr">
+            <div style="color:Black;"><pre>#<span style="color:Blue;">using</span> &lt;System.dll&gt;
+#<span style="color:Blue;">using</span> &lt;System.Windows.Forms.dll&gt;
+#<span style="color:Blue;">using</span> &lt;System.Drawing.dll&gt;
+
+<span style="color:Blue;">using</span> <span style="color:Blue;">namespace</span> System;
+<span style="color:Blue;">using</span> <span style="color:Blue;">namespace</span> System::Drawing;
+<span style="color:Blue;">using</span> <span style="color:Blue;">namespace</span> System::Windows::Forms;
+<span style="color:Blue;">public</span> <span style="color:Blue;">ref class</span> Form1: <span style="color:Blue;">public</span> System::Windows::Forms::Form
+{
+<span style="color:Blue;">private</span>:
+   System::Windows::Forms::LinkLabel^ linkLabel1;
+
+<span style="color:Blue;">public</span>:
+   Form1()
+   {
+
+      <span style="color:Green;">// Create the LinkLabel.</span>
+      <span style="color:Blue;">this</span>-&gt;linkLabel1 = <span style="color:Blue;">gcnew</span> System::Windows::Forms::LinkLabel;
+
+      <span style="color:Green;">// Configure the LinkLabel's size and location. Specify that the</span>
+      <span style="color:Green;">// size should be automatically determined by the content.</span>
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Location = System::Drawing::Point( 34, 56 );
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Size = System::Drawing::Size( 224, 16 );
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;AutoSize = <span style="color:Blue;">true</span>;
+
+      <span style="color:Green;">// Configure the appearance.</span>
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;DisabledLinkColor = System::Drawing::Color::Red;
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;VisitedLinkColor = System::Drawing::Color::Blue;
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;LinkBehavior = System::Windows::Forms::LinkBehavior::HoverUnderline;
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;LinkColor = System::Drawing::Color::Navy;
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;TabIndex = 0;
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;TabStop = <span style="color:Blue;">true</span>;
+
+      <span style="color:Green;">// Add an event handler to do something when the links are clicked.</span>
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;LinkClicked += <span style="color:Blue;">gcnew</span> System::Windows::Forms::LinkLabelLinkClickedEventHandler( <span style="color:Blue;">this</span>, &amp;Form1::linkLabel1_LinkClicked );
+
+      <span style="color:Green;">// Identify what the first Link is.</span>
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;LinkArea = System::Windows::Forms::LinkArea( 0, 8 );
+
+      <span style="color:Green;">// Identify that the first link is visited already.</span>
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Links[ 0 ]-&gt;Visited = <span style="color:Blue;">true</span>;
+
+      <span style="color:Green;">// Set the Text property to a String*.</span>
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Text = <span style="color:#A31515;">"Register Online.  Visit Microsoft.  Visit MSN."</span>;
+
+      <span style="color:Green;">// Create new links using the Add method of the LinkCollection class.</span>
+      <span style="color:Green;">// Underline the appropriate words in the LinkLabel's Text property.</span>
+      <span style="color:Green;">// The words 'Register', 'Microsoft', and 'MSN' will</span>
+      <span style="color:Green;">// all be underlined and behave as hyperlinks.</span>
+      <span style="color:Green;">// First check that the Text property is long enough to accommodate</span>
+      <span style="color:Green;">// the desired hyperlinked areas.  If it's not, don't add hyperlinks.</span>
+      <span style="color:Blue;">if</span> ( <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Text-&gt;Length &gt;= 45 )
+      {
+         <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Links[ 0 ]-&gt;LinkData = <span style="color:#A31515;">"Register"</span>;
+         <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Links-&gt;Add( 24, 9, <span style="color:#A31515;">"www.microsoft.com"</span> );
+         <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Links-&gt;Add( 42, 3, <span style="color:#A31515;">"www.msn.com"</span> );
+         <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Links[ 1 ]-&gt;Enabled = <span style="color:Blue;">false</span>;
+      }
+
+
+      <span style="color:Green;">// Set up how the form should be displayed and add the controls to the form.</span>
+      <span style="color:Blue;">this</span>-&gt;ClientSize = System::Drawing::Size( 292, 266 );
+      <span style="color:Blue;">array</span>&lt;System::Windows::Forms::Control^&gt;^temp0 = {<span style="color:Blue;">this</span>-&gt;linkLabel1};
+      <span style="color:Blue;">this</span>-&gt;Controls-&gt;AddRange( temp0 );
+      <span style="color:Blue;">this</span>-&gt;Text = <span style="color:#A31515;">"Link Label Example"</span>;
+   }
+
+
+<span style="color:Blue;">private</span>:
+   <span style="color:Blue;">void</span> linkLabel1_LinkClicked( Object^ <span style="color:Green;">/*sender*/</span>, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e )
+   {
+      <span style="color:Green;">// Determine which link was clicked within the LinkLabel.</span>
+      <span style="color:Blue;">this</span>-&gt;linkLabel1-&gt;Links[ linkLabel1-&gt;Links-&gt;IndexOf( e-&gt;Link ) ]-&gt;Visited = <span style="color:Blue;">true</span>;
+
+      <span style="color:Green;">// Display the appropriate link based on the value of the</span>
+      <span style="color:Green;">// LinkData property of the Link Object*.</span>
+      String^ target = <span style="color:Blue;">dynamic_cast</span>&lt;String^&gt;(e-&gt;Link-&gt;LinkData);
+
+      <span style="color:Green;">// If the value looks like a URL, navigate to it.</span>
+      <span style="color:Green;">// Otherwise, display it in a message box.</span>
+      <span style="color:Blue;">if</span> ( <span style="color:Blue;">nullptr</span> != target &amp;&amp; target-&gt;StartsWith( <span style="color:#A31515;">"www"</span> ) )
+      {
+         System::Diagnostics::Process::Start( target );
+      }
+      <span style="color:Blue;">else</span>
+      {
+         MessageBox::Show( <span style="color:#A31515;">"Item clicked: {0}"</span>, target );
+      }
+   }
+};
+
+[STAThread]
+<span style="color:Blue;">int</span> main()
+{
+   Application::Run( <span style="color:Blue;">gcnew</span> Form1 );
+}
+</pre></div>
+            
+        </div>
+    </div>
+</div>
+</div></div></div></div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="Свернуть" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Информация о версии</span></a><div id="Anchor_3" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock">
+        <strong>.NET Framework</strong>
+      <br>Доступно с 1.1<br></div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="Свернуть" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">См. также</span></a><div id="Anchor_4" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><p><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabellinkclickedeventhandler(v=vs.110).aspx">LinkLabelLinkClickedEventHandler</a><br><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.onlinkclicked(v=vs.110).aspx">OnLinkClicked</a><br><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel(v=vs.110).aspx">Класс LinkLabel</a><br><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms(v=vs.110).aspx">Пространство имен System.Windows.Forms</a><br></p></div></div><a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#mainBody">Вернуться в начало</a><br></div></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="libraryMemberFilter">
+    <div class="filterContainer">
+        <span>Показ:</span>
+        <label>
+            <input type="checkbox" class="libraryFilterInherited" checked="checked" value="Inherit">Унаследовано
+        </label>
+        <label>
+            <input type="checkbox" class="libraryFilterProtected" checked="checked" value="Protected">Защищен
+        </label>
+    </div>
+</div>
+    
+<input type="hidden" id="libraryMemberFilterEmptyWarning" value="Для текущих настроек фильтра нет доступных членов.">
+
+
+
+    </div>
+<div id="rightNavigationMenu" ms.cmpgrp="right nav">
+    <div id="mobileButtons">
+        <div id="navigationButtons">
+            <a id="isd_print" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(d=printer,v=vs.110).aspx" rel="nofollow"><ins class="print"></ins>Печать </a>
+            <a id="isd_printABook" href="https://msdn.microsoft.com/ru-ru/library/export/help/?returnurl=%2fru-ru%2flibrary%2fsystem.windows.forms.linklabel.linkclicked(v%3dvs.110).aspx">
+                <ins class="export"></ins>Экспорт (<span class="count">0</span>)
+            </a>
+        </div>
+    </div>
+    <div id="navMain">
+        <div id="closeNavigation">
+            <a class="tocCloseSmall" id="closeButton"></a>
+        </div>
+        <div id="navigationButtons">
+            <a id="isd_print" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(d=printer,v=vs.110).aspx" rel="nofollow"><ins class="print"></ins>Печать </a>
+            <a id="isdShare" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#" role="button" aria-expanded="false">
+                <ins class="share"></ins>Общий доступ
+            </a>
+            <div id="socials" style="display: none">
+                <a class="isdFacebook" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#" aria-label="Поделиться в Facebook">
+                    <ins class="facebook"></ins>
+                </a>
+                <a class="isdTwitter" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#" aria-label="Поделиться в Twitter">
+                    <ins class="twitter"></ins>
+                </a>
+                <a class="isdGooglePlus" href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#" aria-label="Поделиться в Google+">
+                    <ins class="googlePlus"></ins>
+                </a>
+            </div>
+        </div>
+        <div id="indoc_toc" style="display: none" ms.cmpgrp="indoc toc">
+            <div id="indoc_title">СОДЕРЖАНИЕ СТАТЬИ</div>
+            <ul id="indoc_toclist"></ul>
+        </div>
+    </div>
+</div>
+<div id="rightNavigationMenuThumbnail" class="rightNavigationMenuThumbnail">
+</div>
+
+
+
+
+
+        </div>
+        <div class="clear"></div>
+
+        
+
+<input name="__RequestVerificationToken" type="hidden" value="wc0Pcmncd2oDGfsi6J4eLK-HW-15JvcKq565BRWF9D-SgdFQzKtJZ6vo0Pv_cGmseT2CAZHW0mDENa6wG2lqExQ_-FQ1">
+<input id="ratingValueSubmitUrl" type="hidden" value="https://msdn.microsoft.com/ru-ru/library/feedback/rate/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx">
+<input id="ratingAdditionalSubmitUrl" type="hidden" value="https://msdn.microsoft.com/ru-ru/library/feedback/additional/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx">
+<input id="isTopicRated" type="hidden" value="false">
+
+
+
+
+    <div id="lib-footer">
+        
+
+    
+    <link type="text/css" rel="stylesheet">
+    
+        
+    <div id="ux-footer" class="" style="" dir="ltr" ms.pgarea="footer">
+
+
+    <div id="standardRatingBefore" class="clear stdr-container-before"></div>
+    <div id="standardRating" class="stdr-container" ms.pgarea="body">
+        <div class="stdr-close"></div>
+        <div class="stdr-vote stdr-content">
+            <div class="stdr-content">
+                <span class="stdr-votetitle">Была ли эта страница полезной?</span>
+                <button class="stdr-yes" aria-label="Да, эта страница была полезной">Да</button>
+                <button class="stdr-no" aria-label="Нет, эта страница не была полезной">Нет</button>
+                <input id="s_ratingValue" type="hidden" value="">
+            </div>
+        </div>
+        <div class="stdr-feedback" style="display: none">
+            <div class="stdr-form">
+                <div class="stdr-fieldtitle">Дополнительный отзыв?</div>
+                <textarea class="stdr-detail" rows="6" maxlength="1500"></textarea>
+                <div>
+                    <span class="stdr-count"><span class="stdr-charcnt">1500</span> символов осталось</span>
+                    <div class="stdr-buttons">
+                        <button class="stdr-provide" aria-label="Отправить дополнительный отзыв">Отправить</button>
+                        <button class="stdr-skip" aria-label="Пропустить дополнительный отзыв">Пропустить</button>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="stdr-thanks" style="display: none">
+            <div class="stdr-content">
+                <span class="stdr-thankyou">Спасибо!</span>
+                <span class="stdr-appreciate">Благодарим за отзыв. Ваше мнение очень важно для нас.</span>
+            </div>
+        </div>
+
+        
+        <div id="contentFeedbackQAContainer" style="display: none;"></div>
+    </div>
+    <div id="standardRatingPlaceholder" style="display: none"></div>
+    
+
+        <footer class="top" role="navigation" aria-label="footer">
+            <div data-fragmentname="LeftLinks" id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Центры разработки</h4>
+    <ul class="links">
+      <li>
+        <a href="https://dev.windows.com/" id="LeftLinks_2148_1" class="windowsBlue" xmlns="http://www.w3.org/1999/xhtml">Windows</a>
+      </li>
+      <li>
+        <a href="https://dev.office.com/" id="LeftLinks_2148_3" class="office" xmlns="http://www.w3.org/1999/xhtml">Office</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/vstudio" id="LeftLinks_2148_4" class="visualStudio" xmlns="http://www.w3.org/1999/xhtml">Visual Studio</a>
+      </li>
+      <li>
+        <a href="https://azure.microsoft.com/ru-ru/documentation/" target="_blank" id="LeftLinks_2148_12" xmlns="http://www.w3.org/1999/xhtml">Microsoft Azure</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/developer-centers-msdn" id="LeftLinks_2148_5" xmlns="http://www.w3.org/1999/xhtml">Дополнительно...</a>
+      </li>
+    </ul>
+  </div>
+</div>
+            <div id="rightLinks">
+                <div data-fragmentname="CenterLinks1" id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Обучение</h4>
+    <ul class="links">
+      <li>
+        <a href="https://mva.microsoft.com/" id="CenterLinks1_2151_4" xmlns="http://www.w3.org/1999/xhtml">Microsoft Virtual Academy</a>
+      </li>
+      <li>
+        <a href="https://channel9.msdn.com/browse/series?lang=ru" id="CenterLinks1_2151_5" xmlns="http://www.w3.org/1999/xhtml">Канал Channel 9</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/ru-ru/magazine/default.aspx" id="CenterLinks1_2151_7" xmlns="http://www.w3.org/1999/xhtml">Журнал MSDN</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks2" id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Сообщество</h4>
+    <ul class="links">
+      <li>
+        <a href="https://blogs.msdn.com/b/rudevnews/" id="CenterLinks2_2151_17" xmlns="http://www.w3.org/1999/xhtml">Новости</a>
+      </li>
+      <li>
+        <a href="https://social.msdn.microsoft.com/forums/ru-ru/home" id="CenterLinks2_2151_8" xmlns="http://www.w3.org/1999/xhtml">Форумы</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/ru-ru/jj129558" id="CenterLinks2_2151_9" xmlns="http://www.w3.org/1999/xhtml">Блоги</a>
+      </li>
+      <li>
+        <a href="https://www.codeplex.com/" id="CenterLinks2_2151_10" xmlns="http://www.w3.org/1999/xhtml">Codeplex</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks3" id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Свяжитесь с нами</h4>
+    <ul class="links">
+      <li>
+        <a href="https://msdn.microsoft.com/hh361695" id="CenterLinks3_2151_11" xmlns="http://www.w3.org/1999/xhtml">Самостоятельно</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks4" id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Программы</h4>
+    <ul class="links">
+      <li>
+        <a href="https://bizspark.microsoft.com/" id="CenterLinks4_2151_13" xmlns="http://www.w3.org/1999/xhtml">BizSpark (для стартапов)</a>
+      </li>
+      <li>
+        <a href="https://imagine.microsoft.com/" id="CenterLinks4_2151_23" xmlns="http://www.w3.org/1999/xhtml">Microsoft Imagine (for students)</a>
+      </li>
+    </ul>
+  </div>
+</div>
+            </div>
+        </footer>
+
+        <footer class="bottom" role="contentinfo">
+            <span class="localeContainer">
+                
+    <form class="selectLocale" id="selectLocaleForm" action="https://msdn.microsoft.com/ru-ru/selectlocale-dmc">
+        <input type="hidden" name="fromPage" value="https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2fsystem.windows.forms.linklabel.linkclicked(v%3dvs.110).aspx">
+        <a href="https://msdn.microsoft.com/ru-ru/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx#" onclick="$(&#39;#selectLocaleForm&#39;).submit();return false;" title="Измените язык">Россия (Pусский)</a>
+    </form>
+
+
+            </span>
+
+            <div data-fragmentname="BottomLinks" id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <ul class="links horizontal">
+      <li>
+        <a href="https://msdn.microsoft.com/newsletter.aspx" id="BottomLinks_2148_7" xmlns="http://www.w3.org/1999/xhtml">Информационный бюллетень</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/dn529288" id="BottomLinks_2148_8" xmlns="http://www.w3.org/1999/xhtml">Конфиденциальность и файлы cookie</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/cc300389" id="BottomLinks_2148_9" xmlns="http://www.w3.org/1999/xhtml">Условия использования</a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/" id="BottomLinks_2148_10" xmlns="http://www.w3.org/1999/xhtml">Товарные знаки</a>
+      </li>
+    </ul>
+  </div>
+</div>
+            <span class="logoLegal">
+                <span class="logoSpan clip67x13" role="img" tabindex="0" aria-label="microsoft logo">
+                    <img alt="logo" class="logo" src="./Событие LinkLabel.LinkClicked (System.Windows.Forms)_files/HeaderFooterSprite.png">
+                </span>
+                <span class="copyright">© 2017 Microsoft</span>
+            </span>
+        </footer>
+    </div>
+    
+
+    </div>
+
+
+        <div class="footerPrintView">
+            <div class="footerCopyrightPrintView">© 2017 Microsoft</div>
+        </div>
+
+        
+        
+
+        
+        
+        
+
+    <input id="tocPaddingPerLevel" type="hidden" value="17">
+
+
+
+        <input id="MtpsDevice" type="hidden" value="Default">
+
+
+<!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]-->
+
+        
+        
+        
+            
+        
+
+<!--[CDATA[ WebTrends view model not available or IncludeLegacyWebTrendsScriptInGlobal feature flag is off]]-->
+
+
+
+
+<div id="globalRequestVerification">
+    <input name="__RequestVerificationToken" type="hidden" value="FZhWMdIfb47v2IWWle4u6zFNkSrw0b9WmgZT-8GXshVfpM82rTgmGBob4JJ7sZpgW9I4XkSJMPWoazlZraK8KFumDRw1">
+</div>
+
+
+    </div>
+
+    
+    
+
+    
+
+    
+<script type="text/javascript" class="mtps-injected">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"ttf\": \"https://i-msdn.sec.s-msft.com\"\r\n});\r\n/**/" },
+	{ txt: "//\n\n        window.appInsightsId = \u00275eb1b2eb-c47a-497a-a7ac-a1c230b2882f\u0027;\n        //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:Layout,2:Header,3:Breadcrumbs,4:LibraryRightNavigationMenu,4:PrintExportButton,5:StandardRating,2:Footer,0:Topic,3:ResponsiveSupport,0:AppInsightsPerf,3:ResponsiveToc,0:ABTestControl,4:WEDCS,3:CmpgrpForHeader,1:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Library/Content:3,/Areas/Library/Themes/Base/Content:4,/Areas/Global/Content:5\u0026amp;hashKey=380CB181B38C487101990C8F514C8659\u0026amp;v=2AE90AB18263C04865E600A666E1D82F" },
+	{ url: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026minimumTermLength=2\u0026pgArea=header\u0026brand=Msdn\u0026loc=ru-ru\u0026focusOnInit=false\u0026emptyWatermark=true\u0026searchButtonTooltip=Поиск в MSDN" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Areas/Epx/Themes/Base/Content/JumpRedirect.js" },
+	{ txt: "//\n    MTPS = window.MTPS || {};\n    MTPS.Translation = window.MTPS.Translation || {};\n\n    MTPS.Translation.TranslationType =  0;\n    \n    \n        \n        MTPS.Translation.EditorLink = {\n            includeEditor : 0,\n            editLink: \"https://msdn.microsoft.com/ru-ru/library/translation/edit/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx\",\n            editLinkText: \"Предложите более удачный вариант перевода\"\n        };\n        \n    //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:jquery.popup,0:Translator;/Areas/Library/Content:0\u0026amp;hashKey=16D24150BAC1A18066CEC17E9B28E03E\u0026amp;v=2AE90AB18263C04865E600A666E1D82F" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Развернуть\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Свернуть\u0027; MTPS.LocalizedStrings.EnhancedExpandTooltip = \u0027Щелкните, чтобы развернуть. Щелкните дважды, чтобы развернуть все.\u0027; MTPS.LocalizedStrings.EnhancedCollapseTooltip = \u0027Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все.\u0027; MTPS.LocalizedStrings.ExpandAllButtonTooltip = \u0027Развернуть все\u0027; MTPS.LocalizedStrings.CollapseAllButtonTooltip = \u0027Свернуть все\u0027;" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=D8D1FFAA6CA68460B7EFA5923975CA44\u0026amp;v=2AE90AB18263C04865E600A666E1D82F" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</script>
+
+</body></html>

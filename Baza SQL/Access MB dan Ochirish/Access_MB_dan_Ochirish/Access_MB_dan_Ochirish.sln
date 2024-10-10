@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Access_MB_dan_Ochirish", "Access_MB_dan_Ochirish\Access_MB_dan_Ochirish.vcxproj", "{196DC33A-BD96-4C6B-8299-A125555718FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{196DC33A-BD96-4C6B-8299-A125555718FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{196DC33A-BD96-4C6B-8299-A125555718FC}.Debug|Win32.Build.0 = Debug|Win32
+		{196DC33A-BD96-4C6B-8299-A125555718FC}.Release|Win32.ActiveCfg = Release|Win32
+		{196DC33A-BD96-4C6B-8299-A125555718FC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

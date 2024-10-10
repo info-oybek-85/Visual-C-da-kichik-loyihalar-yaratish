@@ -1,0 +1,31 @@
+﻿Build started 09.10.2017 1:08:03.
+     1>Project "C:\Users\User\documents\visual studio 2012\Projects\3-lab_6-jadval\3-lab_6-jadval\3-lab_6-jadval.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\3-lab_6-jadval.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib "3-lab_6-jadval.cpp"
+         3-lab_6-jadval.cpp
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(238): warning C4244: '=' : conversion from 'wchar_t' to 'char', possible loss of data
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(239): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(115) : see declaration of 'strcat'
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(242): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(248): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(191) : see declaration of 'strncpy'
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(257): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(261): warning C4244: '=' : conversion from 'wchar_t' to 'char', possible loss of data
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(263): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(115) : see declaration of 'strcat'
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(264): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2012\projects\3-lab_6-jadval\3-lab_6-jadval\Form1.h(267): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(182) : see declaration of 'strncat'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\documents\visual studio 2012\Projects\3-lab_6-jadval\Debug\3-lab_6-jadval.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\My3lab_6jadval.Form1.resources /ASSEMBLYRESOURCE:Debug\My3lab_6jadval.Form2.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\User\documents\visual studio 2012\Projects\3-lab_6-jadval\Debug\3-lab_6-jadval.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         "Debug\3-lab_6-jadval.obj"
+         Debug\AssemblyInfo.obj
+         Debug\Form2.obj
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         3-lab_6-jadval.vcxproj -> C:\Users\User\documents\visual studio 2012\Projects\3-lab_6-jadval\Debug\3-lab_6-jadval.exe
+     1>Done Building Project "C:\Users\User\documents\visual studio 2012\Projects\3-lab_6-jadval\3-lab_6-jadval\3-lab_6-jadval.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.56

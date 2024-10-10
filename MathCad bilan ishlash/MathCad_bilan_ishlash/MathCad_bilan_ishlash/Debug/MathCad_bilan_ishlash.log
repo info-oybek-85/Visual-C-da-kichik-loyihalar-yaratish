@@ -1,0 +1,46 @@
+﻿Build started 05.07.2017 5:24:03.
+     1>Project "C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\MathCad bilan ishlash\MathCad_bilan_ishlash\MathCad_bilan_ishlash\MathCad_bilan_ishlash.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\MathCad_bilan_ishlash.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\MathCad_bilan_ishlash.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib AssemblyInfo.cpp MathCad_bilan_ishlash.cpp
+         AssemblyInfo.cpp
+         MathCad_bilan_ishlash.cpp
+     1>MathCad_bilan_ishlash.cpp(6): error C2653: 'iTextSharp' : is not a class or namespace name
+     1>MathCad_bilan_ishlash.cpp(6): error C2871: 'text' : a namespace with this name does not exist
+     1>MathCad_bilan_ishlash.cpp(7): error C2653: 'iTextSharp' : is not a class or namespace name
+     1>MathCad_bilan_ishlash.cpp(7): error C2871: 'pdf' : a namespace with this name does not exist
+     1>MathCad_bilan_ishlash.cpp(12): error C2065: 'Document' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(12): error C2065: 'Документ' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(12): error C2061: syntax error : identifier 'Document'
+     1>MathCad_bilan_ishlash.cpp(13): error C2653: 'PdfWriter' : is not a class or namespace name
+     1>MathCad_bilan_ishlash.cpp(13): error C2065: 'Документ' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(13): error C3861: 'GetInstance': identifier not found
+     1>MathCad_bilan_ishlash.cpp(15): error C2065: 'Документ' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(15): error C2227: left of '->Open' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>MathCad_bilan_ishlash.cpp(17): error C2065: 'BaseFont' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(17): error C2065: 'БазовыйШрифт' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(17): error C2653: 'BaseFont' : is not a class or namespace name
+     1>MathCad_bilan_ishlash.cpp(21): error C2653: 'BaseFont' : is not a class or namespace name
+     1>MathCad_bilan_ishlash.cpp(21): error C2065: 'EMBEDDED' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(17): error C3861: 'CreateFont': identifier not found
+     1>MathCad_bilan_ishlash.cpp(24): error C2065: 'Font' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(24): error C2065: 'Шрифт' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(24): error C2061: syntax error : identifier 'Font'
+     1>MathCad_bilan_ishlash.cpp(24): error C2653: 'Font' : is not a class or namespace name
+     1>MathCad_bilan_ishlash.cpp(25): error C2065: 'Документ' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(25): error C2227: left of '->Add' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>MathCad_bilan_ishlash.cpp(25): error C2061: syntax error : identifier 'Paragraph'
+     1>MathCad_bilan_ishlash.cpp(26): error C2065: 'Шрифт' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(26): error C2143: syntax error : missing ';' before ')'
+     1>MathCad_bilan_ishlash.cpp(27): error C2065: 'Документ' : undeclared identifier
+     1>MathCad_bilan_ishlash.cpp(27): error C2227: left of '->Close' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+         Generating Code...
+     1>Done Building Project "C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\MathCad bilan ishlash\MathCad_bilan_ishlash\MathCad_bilan_ishlash\MathCad_bilan_ishlash.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.99

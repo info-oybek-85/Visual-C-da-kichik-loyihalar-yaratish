@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fayllar_bilan_ishlash", "Fayllar_bilan_ishlash\Fayllar_bilan_ishlash.vcxproj", "{735A075D-1FA0-43A3-98BD-C3A877ADB744}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{735A075D-1FA0-43A3-98BD-C3A877ADB744}.Debug|Win32.ActiveCfg = Debug|Win32
+		{735A075D-1FA0-43A3-98BD-C3A877ADB744}.Debug|Win32.Build.0 = Debug|Win32
+		{735A075D-1FA0-43A3-98BD-C3A877ADB744}.Release|Win32.ActiveCfg = Release|Win32
+		{735A075D-1FA0-43A3-98BD-C3A877ADB744}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

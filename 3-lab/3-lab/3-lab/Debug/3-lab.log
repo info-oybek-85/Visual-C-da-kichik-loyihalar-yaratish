@@ -1,0 +1,43 @@
+﻿Build started 28.06.2018 10:26:07.
+     1>Project "D:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\3-lab\3-lab\3-lab\3-lab.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\3-lab.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\3-lab.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib "3-lab.cpp" AssemblyInfo.cpp talaba.cpp
+         3-lab.cpp
+     1>d:\unuversity\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\3-lab\3-lab\3-lab\Form1.h(540): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\unuversity\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\3-lab\3-lab\3-lab\Form1.h(542): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(182) : see declaration of 'strncat'
+     1>d:\unuversity\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\3-lab\3-lab\3-lab\Form1.h(535): warning C4101: 'AA' : unreferenced local variable
+     1>d:\unuversity\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\3-lab\3-lab\3-lab\Form1.h(554): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\unuversity\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\3-lab\3-lab\3-lab\Form1.h(572): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(237) : see declaration of 'fscanf'
+     1>d:\unuversity\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\3-lab\3-lab\3-lab\Form1.h(563): warning C4101: 'Tt' : unreferenced local variable
+     1>d:\unuversity\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\3-lab\3-lab\3-lab\Form1.h(565): warning C4101: 'n' : unreferenced local variable
+     1>d:\unuversity\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\3-lab\3-lab\3-lab\Form1.h(642): warning C4101: 'vaziyat' : unreferenced local variable
+         AssemblyInfo.cpp
+         talaba.cpp
+     1>talaba.cpp(10): warning C4101: 'guruh' : unreferenced local variable
+     1>talaba.cpp(7): warning C4101: 'ism' : unreferenced local variable
+     1>talaba.cpp(13): warning C4101: 'baho' : unreferenced local variable
+     1>talaba.cpp(9): warning C4101: 'sharfi' : unreferenced local variable
+     1>talaba.cpp(11): warning C4101: 'Tu_sana' : unreferenced local variable
+     1>talaba.cpp(8): warning C4101: 'fam' : unreferenced local variable
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\3-lab\3-lab\Debug\3-lab.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\My3lab.Form1.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\3-lab\3-lab\Debug\3-lab.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         "Debug\3-lab.obj"
+         Debug\AssemblyInfo.obj
+         Debug\stdafx.obj
+         Debug\talaba.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         3-lab.vcxproj -> D:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\3-lab\3-lab\Debug\3-lab.exe
+     1>Done Building Project "D:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\3-lab\3-lab\3-lab\3-lab.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.06

@@ -1,0 +1,21 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.ACTIVEXLib.1.0, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ACTIVEXLib.CAuthzClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ACTIVEXLib.IAuthz
+    ACTIVEXLib.CAuthz
+  Methods:
+    GetOfficeLCID(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetOfficeRestrictions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface ACTIVEXLib.CAuthz: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ACTIVEXLib.IAuthz
+Interface ACTIVEXLib.IAuthz: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    GetOfficeLCID(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetOfficeRestrictions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract

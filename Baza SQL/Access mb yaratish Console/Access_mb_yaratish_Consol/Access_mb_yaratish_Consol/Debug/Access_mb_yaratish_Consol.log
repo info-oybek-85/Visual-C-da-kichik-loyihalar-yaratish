@@ -1,0 +1,28 @@
+﻿Build started 14.05.2019 18:39:52.
+     1>Project "E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\Baza SQL\Access mb yaratish Console\Access_mb_yaratish_Consol\Access_mb_yaratish_Consol\Access_mb_yaratish_Consol.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\USERS\OYBEK\DOCUMENTS\VISUAL STUDIO 2012\PROJECTS\METODICHKA\BAZA SQL\ACCESS MB YARATISH CONSOLE\ACCESS_MB_YARATISH_CONSOL\ACCESS_MB_YARATISH_CONSOL\INTEROP\INTEROP.ADOX.2.8.DLL" is missing.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.MetaGen.targets(91,5): warning : Required file "D:\UNUVERSITY\2017 - 2018\METODICHKA 3-SEM 199-VAROQ\DASTURLARI\METODICHKA\BAZA SQL\ACCESS MB YARATISH CONSOLE\ACCESS_MB_YARATISH_CONSOL\ACCESS_MB_YARATISH_CONSOL\INTEROP\INTEROP.ADOX.2.8.DLL" is missing.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Access_mb_yaratish_Consol.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /FUInterop\Interop.ADOX.2.8.dll /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Access_mb_yaratish_Consol.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /FUInterop\Interop.ADOX.2.8.dll /analyze- /errorReport:prompt /clr:nostdlib Access_mb_yaratish_Consol.cpp AssemblyInfo.cpp
+         Access_mb_yaratish_Consol.cpp
+     1>Access_mb_yaratish_Consol.cpp(19): warning C4566: character represented by universal-character-name '\u049B' cannot be represented in the current code page (1251)
+         AssemblyInfo.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /analyze- /errorReport:prompt "C:\Users\User\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.5.AssemblyAttributes.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\Baza SQL\Access mb yaratish Console\Access_mb_yaratish_Consol\Debug\Access_mb_yaratish_Consol.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\Baza SQL\Access mb yaratish Console\Access_mb_yaratish_Consol\Debug\Access_mb_yaratish_Consol.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\Access_mb_yaratish_Consol.obj
+         Debug\AssemblyInfo.obj
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         Access_mb_yaratish_Consol.vcxproj -> E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\Baza SQL\Access mb yaratish Console\Access_mb_yaratish_Consol\Debug\Access_mb_yaratish_Consol.exe
+     1>Done Building Project "E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\Baza SQL\Access mb yaratish Console\Access_mb_yaratish_Consol\Access_mb_yaratish_Consol\Access_mb_yaratish_Consol.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.99

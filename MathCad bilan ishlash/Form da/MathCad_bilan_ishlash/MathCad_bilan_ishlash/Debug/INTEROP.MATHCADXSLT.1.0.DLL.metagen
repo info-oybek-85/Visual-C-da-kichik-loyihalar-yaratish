@@ -1,0 +1,986 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.MathcadXSLT.1.0, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface MathcadXSLT.IXSLTExtension: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    CanonicalNameToSymbol(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TranslateQuantityName(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MakeComplexTree(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Msg(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Scramble(IXMLDOMNodeList(In, HasFieldMarshal), SByte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Unscramble(String(In, HasFieldMarshal), SByte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SpaceToElements(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ElementsToSpace(IXMLDOMNodeList(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Convert12CustomUnitsTo13(String(In, HasFieldMarshal), IXMLDOMNodeList(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    writeImage(IXMLDOMNodeList(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    encodeJavascript(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    encodeStatusText(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    encodeAlertText(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetHtmlContent(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetOutputsWidth(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetURLForDocument(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FixFontSize(Double(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    calcXMCDWidth(IXMLDOMNodeList(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    calcXMCDHeight(IXMLDOMNodeList(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MakeUnicodePassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MakeAnsiPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MakeUnicodeString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MakeByteString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ConvertJPG64ToPNG64(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMNodeList: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    MathcadXSLT.IXMLDOMNode item [Int32] 'get ' : 
+    Int32 length 'get ' : 
+  Methods:
+    get_item(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    nextNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMNode: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct MathcadXSLT.DOMNodeType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MathcadXSLT.DOMNodeType NODE_INVALID = 0 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_ELEMENT = 1 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_ATTRIBUTE = 2 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_TEXT = 3 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_CDATA_SECTION = 4 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_ENTITY_REFERENCE = 5 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_ENTITY = 6 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_PROCESSING_INSTRUCTION = 7 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_COMMENT = 8 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_DOCUMENT = 9 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_DOCUMENT_TYPE = 10 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_DOCUMENT_FRAGMENT = 11 : Public, Static, Literal, HasDefault
+    MathcadXSLT.DOMNodeType NODE_NOTATION = 12 : Public, Static, Literal, HasDefault
+Struct MathcadXSLT.tagDOMNodeType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MathcadXSLT.tagDOMNodeType NODE_INVALID = 0 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_ELEMENT = 1 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_ATTRIBUTE = 2 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_TEXT = 3 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_CDATA_SECTION = 4 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_ENTITY_REFERENCE = 5 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_ENTITY = 6 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_PROCESSING_INSTRUCTION = 7 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_COMMENT = 8 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_DOCUMENT = 9 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_DOCUMENT_TYPE = 10 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_DOCUMENT_FRAGMENT = 11 : Public, Static, Literal, HasDefault
+    MathcadXSLT.tagDOMNodeType NODE_NOTATION = 12 : Public, Static, Literal, HasDefault
+Interface MathcadXSLT.IXMLDOMNamedNodeMap: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    MathcadXSLT.IXMLDOMNode item [Int32] 'get ' : 
+    Int32 length 'get ' : 
+  Methods:
+    getNamedItem(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    setNamedItem(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeNamedItem(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_item(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    getQualifiedItem(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeQualifiedItem(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    nextNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMDocument: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    IntPtr doctype 'get ' : 
+    IntPtr implementation 'get ' : 
+    IntPtr documentElement 'get set' : 
+    Int32 readyState 'get ' : 
+    IntPtr parseError 'get ' : 
+    System.String url 'get ' : 
+    Boolean async 'get set' : 
+    Boolean validateOnParse 'get set' : 
+    Boolean resolveExternals 'get set' : 
+    Boolean preserveWhiteSpace 'get set' : 
+    System.Object onreadystatechange 'set' : 
+    System.Object ondataavailable 'set' : 
+    System.Object ontransformnode 'set' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_doctype(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_implementation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_documentElement(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_documentElement(IXMLDOMElement(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    createElement(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createDocumentFragment(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createTextNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createComment(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createCDATASection(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createProcessingInstruction(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createAttribute(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createEntityReference(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    getElementsByTagName(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createNode(Object(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    nodeFromID(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    load(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_readyState(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parseError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_url(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_async(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_async(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    abort(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    loadXML(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    save(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_validateOnParse(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_validateOnParse(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_resolveExternals(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_resolveExternals(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_preserveWhiteSpace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_preserveWhiteSpace(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_onreadystatechange(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ondataavailable(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ontransformnode(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface MathcadXSLT.IXMLDOMDocumentType: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    System.String name 'get ' : 
+    MathcadXSLT.IXMLDOMNamedNodeMap entities 'get ' : 
+    MathcadXSLT.IXMLDOMNamedNodeMap notations 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_entities(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_notations(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface MathcadXSLT.IXMLDOMImplementation: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    hasFeature(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMElement: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    System.String tagName 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_tagName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    getAttribute(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    setAttribute(String(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeAttribute(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    getAttributeNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    setAttributeNode(IXMLDOMAttribute(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeAttributeNode(IXMLDOMAttribute(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    getElementsByTagName(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    normalize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMAttribute: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    System.String name 'get ' : 
+    System.Object value 'get set' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_value(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface MathcadXSLT.IXMLDOMDocumentFragment: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMText: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMCharacterData
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    System.String data 'get set' : 
+    Int32 length 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_data(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    substringData(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendData(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    insertData(Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    deleteData(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceData(Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    splitText(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMCharacterData: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    System.String data 'get set' : 
+    Int32 length 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_data(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    substringData(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendData(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    insertData(Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    deleteData(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceData(Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMComment: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMCharacterData
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    System.String data 'get set' : 
+    Int32 length 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_data(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    substringData(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendData(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    insertData(Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    deleteData(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceData(Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMCDATASection: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMText
+    MathcadXSLT.IXMLDOMCharacterData
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    System.String data 'get set' : 
+    Int32 length 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_data(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    substringData(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendData(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    insertData(Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    deleteData(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceData(Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    splitText(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMProcessingInstruction: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+    System.String target 'get ' : 
+    System.String data 'get set' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_target(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_data(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface MathcadXSLT.IXMLDOMEntityReference: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MathcadXSLT.IXMLDOMNode
+  Properties:
+    System.String nodeName 'get ' : 
+    System.Object nodeValue 'get set' : 
+    MathcadXSLT.DOMNodeType nodeType 'get ' : 
+    MathcadXSLT.IXMLDOMNode parentNode 'get ' : 
+    IntPtr childNodes 'get ' : 
+    MathcadXSLT.IXMLDOMNode firstChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode lastChild 'get ' : 
+    MathcadXSLT.IXMLDOMNode previousSibling 'get ' : 
+    MathcadXSLT.IXMLDOMNode nextSibling 'get ' : 
+    IntPtr attributes 'get ' : 
+    IntPtr ownerDocument 'get ' : 
+    System.String nodeTypeString 'get ' : 
+    System.String text 'get set' : 
+    Boolean specified 'get ' : 
+    MathcadXSLT.IXMLDOMNode definition 'get ' : 
+    System.Object nodeTypedValue 'get set' : 
+    System.Object dataType 'get set' : 
+    System.String xml 'get ' : 
+    Boolean parsed 'get ' : 
+    System.String namespaceURI 'get ' : 
+    System.String prefix 'get ' : 
+    System.String baseName 'get ' : 
+  Methods:
+    get_nodeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_childNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firstChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lastChild(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_previousSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextSibling(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    insertBefore(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceChild(IXMLDOMNode(In, HasFieldMarshal), IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    removeChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    appendChild(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    hasChildNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ownerDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cloneNode(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_nodeTypeString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_text(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_specified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_definition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nodeTypedValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nodeTypedValue(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_dataType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_dataType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_xml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNode(IXMLDOMNode(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectNodes(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    selectSingleNode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_parsed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_namespaceURI(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_prefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_baseName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    transformNodeToObject(IXMLDOMNode(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MathcadXSLT.IXMLDOMParseError: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 errorCode 'get ' : 
+    System.String url 'get ' : 
+    System.String reason 'get ' : 
+    System.String srcText 'get ' : 
+    Int32 line 'get ' : 
+    Int32 linepos 'get ' : 
+    Int32 filepos 'get ' : 
+  Methods:
+    get_errorCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_url(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_reason(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_srcText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_line(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_linepos(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_filepos(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName

@@ -1,0 +1,27 @@
+﻿Build started 22.02.2018 9:42:06.
+     1>Project "E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Excell bilan ishlash\MS_Excell_bilan_ishlash\MS_Excell_bilan_ishlash\MS_Excell_bilan_ishlash.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\USERS\OYBEK\DOCUMENTS\VISUAL STUDIO 2012\PROJECTS\METODICHKA\MS EXCELL BILAN ISHLASH\MS_EXCELL_BILAN_ISHLASH\MS_EXCELL_BILAN_ISHLASH\INTEROP\INTEROP.MICROSOFT.OFFICE.INTEROP.EXCEL.1.7.DLL" is missing.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\MS_Excell_bilan_ishlash.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /FUInterop\Interop.Microsoft.Office.Interop.Excel.1.7.dll /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\MS_Excell_bilan_ishlash.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /FUInterop\Interop.Microsoft.Office.Interop.Excel.1.7.dll /analyze- /errorReport:prompt /clr:nostdlib AssemblyInfo.cpp MS_Excell_bilan_ishlash.cpp
+         AssemblyInfo.cpp
+         MS_Excell_bilan_ishlash.cpp
+     1>MS_Excell_bilan_ishlash.cpp(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /analyze- /errorReport:prompt "C:\Users\User\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.5.AssemblyAttributes.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Excell bilan ishlash\MS_Excell_bilan_ishlash\Debug\MS_Excell_bilan_ishlash.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Excell bilan ishlash\MS_Excell_bilan_ishlash\Debug\MS_Excell_bilan_ishlash.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\MS_Excell_bilan_ishlash.obj
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         MS_Excell_bilan_ishlash.vcxproj -> E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Excell bilan ishlash\MS_Excell_bilan_ishlash\Debug\MS_Excell_bilan_ishlash.exe
+     1>Done Building Project "E:\Unuversity\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Excell bilan ishlash\MS_Excell_bilan_ishlash\MS_Excell_bilan_ishlash\MS_Excell_bilan_ishlash.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.56

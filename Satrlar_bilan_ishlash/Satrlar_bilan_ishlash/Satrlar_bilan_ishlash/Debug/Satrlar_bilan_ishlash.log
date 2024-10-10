@@ -1,0 +1,26 @@
+﻿Build started 10.06.2017 18:21:43.
+     1>Project "C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Satrlar_bilan_ishlash.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Form2.cpp Satrlar_bilan_ishlash.cpp
+         Form2.cpp
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\satrlar_bilan_ishlash\satrlar_bilan_ishlash\satrlar_bilan_ishlash\Form1.h(143): warning C4244: '=' : conversion from 'wchar_t' to 'char', possible loss of data
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\satrlar_bilan_ishlash\satrlar_bilan_ishlash\satrlar_bilan_ishlash\Form1.h(145): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\satrlar_bilan_ishlash\satrlar_bilan_ishlash\satrlar_bilan_ishlash\Form1.h(199): warning C4101: 'r' : unreferenced local variable
+         Satrlar_bilan_ishlash.cpp
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\satrlar_bilan_ishlash\satrlar_bilan_ishlash\satrlar_bilan_ishlash\Form1.h(143): warning C4244: '=' : conversion from 'wchar_t' to 'char', possible loss of data
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\satrlar_bilan_ishlash\satrlar_bilan_ishlash\satrlar_bilan_ishlash\Form1.h(145): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\satrlar_bilan_ishlash\satrlar_bilan_ishlash\satrlar_bilan_ishlash\Form1.h(199): warning C4101: 'r' : unreferenced local variable
+         Generating Code...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash\Debug\Satrlar_bilan_ishlash.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Satrlar_bilan_ishlash.Form1.resources /ASSEMBLYRESOURCE:Debug\Satrlar_bilan_ishlash.Form2.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash\Debug\Satrlar_bilan_ishlash.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\Form2.obj
+         Debug\Satrlar_bilan_ishlash.obj
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         Satrlar_bilan_ishlash.vcxproj -> C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash\Debug\Satrlar_bilan_ishlash.exe
+     1>Done Building Project "C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash\Satrlar_bilan_ishlash.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.34

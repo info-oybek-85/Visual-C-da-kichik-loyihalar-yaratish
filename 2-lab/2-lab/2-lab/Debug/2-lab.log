@@ -1,0 +1,29 @@
+﻿Build started 05.06.2017 4:51:37.
+     1>Project "C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\2-lab\2-lab\2-lab\2-lab.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\2-lab.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib "2-lab.cpp" Form2.cpp Form3.cpp Form31.cpp
+         2-lab.cpp
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\2-lab\2-lab\2-lab\Form1.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\2-lab\2-lab\2-lab\Form1.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\2-lab\2-lab\2-lab\Form1.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\2-lab\2-lab\2-lab\Form31.h(276): warning C4101: 'indexChecked' : unreferenced local variable
+         Form2.cpp
+         Form3.cpp
+         Form31.cpp
+     1>c:\users\oybek\documents\visual studio 2012\projects\metodichka\2-lab\2-lab\2-lab\Form31.h(276): warning C4101: 'indexChecked' : unreferenced local variable
+         Generating Code...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\2-lab\2-lab\Debug\2-lab.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\My2lab.Form1.resources /ASSEMBLYRESOURCE:Debug\My2lab.Form2.resources /ASSEMBLYRESOURCE:Debug\My2lab.Form3.resources /ASSEMBLYRESOURCE:Debug\My2lab.Form31.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\2-lab\2-lab\Debug\2-lab.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         "Debug\2-lab.obj"
+         Debug\AssemblyInfo.obj
+         Debug\Form2.obj
+         Debug\Form3.obj
+         Debug\Form31.obj
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         2-lab.vcxproj -> C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\2-lab\2-lab\Debug\2-lab.exe
+     1>Done Building Project "C:\Users\Oybek\Documents\Visual Studio 2012\Projects\Metodichka\2-lab\2-lab\2-lab\2-lab.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.46

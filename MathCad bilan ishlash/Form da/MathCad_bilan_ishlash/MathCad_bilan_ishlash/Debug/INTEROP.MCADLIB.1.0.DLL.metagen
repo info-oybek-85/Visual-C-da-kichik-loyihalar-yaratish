@@ -1,0 +1,27 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.MCADLib.1.0, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class MCADLib.WrapClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    MCADLib.IWrap
+    MCADLib.Wrap
+  Properties:
+    System.Object ActiveDocument 'get ' : 
+  Methods:
+    Open(Object&(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OpenResourceCenter(Object&(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ActiveDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface MCADLib.Wrap: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    MCADLib.IWrap
+Interface MCADLib.IWrap: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object ActiveDocument 'get ' : 
+  Methods:
+    Open(Object&(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OpenResourceCenter(Object&(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ActiveDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName

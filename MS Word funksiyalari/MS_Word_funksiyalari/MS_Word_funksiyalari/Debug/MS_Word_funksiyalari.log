@@ -1,0 +1,26 @@
+﻿Build started 07.03.2022 11:16:12.
+     1>Project "d:\Universitet\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Word funksiyalari\MS_Word_funksiyalari\MS_Word_funksiyalari\MS_Word_funksiyalari.vcxproj" on node 2 (Build target(s)).
+     1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(2015,5): warning MSB3284: Cannot get the file path for type library "ea3e6e3c-5130-49c1-8ede-f889cd0f4429" version 1.0. Библиотека не зарегистрирована. (Exception from HRESULT: 0x8002801D (TYPE_E_LIBNOTREGISTERED))
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\MS_Word_funksiyalari.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /FUInterop\Interop.Microsoft.Office.Interop.Word.8.7.dll /FUInterop\Interop.Microsoft.Office.Core.2.8.dll /FUInterop\Interop.Microsoft.Office.Interop.Access.Dao.12.0.dll /analyze- /errorReport:prompt /clr:nostdlib MS_Word_funksiyalari.cpp
+         MS_Word_funksiyalari.cpp
+     1>d:\universitet\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\ms word funksiyalari\ms_word_funksiyalari\ms_word_funksiyalari\Form1.h(118): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\universitet\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\ms word funksiyalari\ms_word_funksiyalari\ms_word_funksiyalari\Form1.h(125): warning C4800: 'char *' : forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\universitet\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\ms word funksiyalari\ms_word_funksiyalari\ms_word_funksiyalari\Form1.h(116): warning C4101: 'n' : unreferenced local variable
+     1>d:\universitet\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\ms word funksiyalari\ms_word_funksiyalari\ms_word_funksiyalari\Form1.h(164): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\universitet\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\ms word funksiyalari\ms_word_funksiyalari\ms_word_funksiyalari\Form1.h(171): warning C4800: 'char *' : forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\universitet\2017 - 2018\metodichka 3-sem 199-varoq\dasturlari\metodichka\ms word funksiyalari\ms_word_funksiyalari\ms_word_funksiyalari\Form1.h(162): warning C4101: 'n' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Universitet\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Word funksiyalari\MS_Word_funksiyalari\Debug\MS_Word_funksiyalari.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\MS_Word_funksiyalari.Form1.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Universitet\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Word funksiyalari\MS_Word_funksiyalari\Debug\MS_Word_funksiyalari.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\MS_Word_funksiyalari.obj
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         MS_Word_funksiyalari.vcxproj -> D:\Universitet\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Word funksiyalari\MS_Word_funksiyalari\Debug\MS_Word_funksiyalari.exe
+     1>Done Building Project "d:\Universitet\2017 - 2018\Metodichka 3-sem 199-varoq\Dasturlari\Metodichka\MS Word funksiyalari\MS_Word_funksiyalari\MS_Word_funksiyalari\MS_Word_funksiyalari.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.88
